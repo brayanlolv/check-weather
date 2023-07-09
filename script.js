@@ -16,7 +16,7 @@ console.log(city)
 
 async function getWeather() {
     selectedCity= city.value
-    const url2 = `https:api.openweathermap.org/data/2.5/weather?q=${selectedCity!=""?selectedCity:"bahia"}&appid=2d91a3f866fe412f802f099b419da399&units=metric&lang=pt_br`
+    const url2 = `https://api.openweathermap.org/data/2.5/weather?q=${selectedCity!=""?selectedCity:"bahia"}&appid=2d91a3f866fe412f802f099b419da399&units=metric&lang=pt_br`
 
     
 
