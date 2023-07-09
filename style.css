@@ -1,0 +1,7 @@
+.hide{
+    display: none;
+}
+
+a, input[type="submit"]{
+    color: black 
+}
