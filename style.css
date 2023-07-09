@@ -1,7 +1,49 @@
-.hide{
-    display: none;
+header{
+    color:white;
+    padding-left: 30px;
+    padding-right: 30px;
+    height:80px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(66, 66, 66);
+    align-items: center;
 }
 
-a, input[type="submit"]{
-    color: black 
+header input{
+    width: 220px;
+    height:30px;
+    border-radius: 10px;
+    border: 2px solid rgb(66, 66, 66);
+    
+}
+
+body{
+    height:100vh;
+    max-width:800px ;
+    margin: auto;
+    
+    
+}
+
+#resultado{
+    
+} 
+
+#container{
+    
+    height: 500px;
+    max-width:800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    
+    
+}
+
+
+#submit{
+    margin-left: 50%;
 }
