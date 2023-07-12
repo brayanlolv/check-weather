@@ -19,6 +19,7 @@ const form = document.querySelector("form").addEventListener("submit", (event) =
 
 })
 
+
 function loading() {
     resultado.innerHTML = "Carregando..."
     container.classList.add("loading")
@@ -38,22 +39,17 @@ async function getWeather() {
 
     const response = await fetch(url)
     const data = await response.json()
+    console.log(data)
     container.classList.remove("loading") 
 
-    let resposta = ` ${data.name} \n  ${data.weather[0].description} \n  ${data.main.feels_like}`
-    resultado.innerText = resposta
 
+    if(data.cod == 200){
+        let resposta = ` ${data.name} \n  ${data.weather[0].description} \n  ${data.main.feels_like}`
+        resultado.innerText = resposta
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+    else{
+        resultado.innerText = "Localidade nao encontrada. \n por favor, tente novamente ou informe seu erro pro suporte"
+    }
 }
 
