@@ -25,7 +25,7 @@ const form = document.querySelector("form").addEventListener("submit", (event) =
 function loading() {
     resultado.innerHTML = "Carregando..."
     container.classList.add("loading")
-    icons.classList.add("hide")
+  
  
 }
 
@@ -37,6 +37,8 @@ function loading() {
 async function getWeather() {
 
     loading()
+    
+    icons.classList.add("hide")
     let selectedCity = city.value
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${selectedCity != "" ? selectedCity : "bahia"}&appid=2d91a3f866fe412f802f099b419da399&units=metric&lang=pt_br`
     console.log("loading...")
@@ -130,7 +132,9 @@ function selectIcon(icon,img){
 
 
     }
+
     img.classList.remove("hide")
+    
 
     
 }
