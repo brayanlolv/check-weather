@@ -11,6 +11,11 @@ header {
 
 }
 
+
+.hide{
+    display: none;
+}
+
 form{
     max-width: 100vw;
 }

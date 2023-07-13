@@ -1,8 +1,8 @@
-clear sky
-few clouds
+clear sky  ok
+few clouds  
 scattered clouds
 broken clouds
-shower rain
+shower rain ok
 rain
 thunderstrom
 snow
